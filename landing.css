@@ -41,7 +41,7 @@
 }
 
 .top_________header {
-  background-color: #24bc20;
+  background-color: #19361a;
   color: #fff;
 }
 
@@ -100,20 +100,20 @@
   border: none;
   outline: none;
   border-radius: 22px;
-  color: #24bc20;
+  color: #19361a;
   padding: 10px;
   letter-spacing: 1px;
   transition: all 0.3s ease-in-out;
 }
 
 .header_______button:hover {
-  background: #24bc20;
+  background: #f0d50e;
   color: #fff;
 }
 
 /* background image */
 .for_____bg___img {
-  background-image: url(./green.jpg);
+  background-image: url(./bg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -154,14 +154,14 @@
   border-radius: 20px;
   background-color: #fff;
   padding: 4px 20px;
-  color: #24bc20;
+  color: #19361a;
   transition: all 0.3s ease-in-out;
   margin-top: 32px;
 }
 
 .view______services:hover {
   color: #fff;
-  background: #24bc20;
+  background: #19361a;
   border: 3px solid #fff;
 }
 
@@ -177,7 +177,7 @@
 /* back to top */
 
 .to-top {
-  background: #24bc20;
+  background: #19361a;
   z-index: 999;
   position: fixed;
   bottom: 16px;
@@ -284,9 +284,9 @@
   border: none;
   outline: none;
   background: none;
-  border-bottom: 3px dotted #24bc20;
+  border-bottom: 3px dotted #19361a;
   letter-spacing: 2px;
-  color: #24bc20;
+  color: #19361a;
   transition: all 0.3s ease-in-out;
 }
 
@@ -296,7 +296,7 @@
 }
 
 .card_____price {
-  color: #24bc20;
+  color: #19361a;
 }
 
 /* before buying card */
@@ -350,7 +350,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #24bc20;
+  background: #19361a;
   padding: 30px;
   margin-top: 40px;
 }
@@ -407,7 +407,7 @@
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
-  border: 1px solid #24bc20;
+  border: 1px solid #19361a;
 }
 
 .customer_______card p {
@@ -462,7 +462,10 @@
 }
 
 .footer {
-  background-color: #24bc20;
+  /* background-color: #19361a; */
+  background-image: url(./bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-footer {
@@ -720,7 +723,7 @@
     position: fixed;
     right: -100%;
     top: 0;
-    background: #24bc20;
+    background: #19361a;
     width: 40%;
     height: 100vh;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
