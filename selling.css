@@ -10,7 +10,6 @@
 /* main card */
 .main_______content_____div {
   width: 70%;
-  
 }
 /* all card */
 .all____________card {
@@ -26,8 +25,9 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-left: 69px;
+  padding-left: 40px;
   margin-top: 12px;
+  flex-wrap: wrap;
 }
 .promoCode .input-group {
   width: 80%;
@@ -63,50 +63,129 @@
   font-weight: 600;
 }
 
-.mainamin{
-    display: flex;
+.mainamin {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* side content */
-.product_____cart img{
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+.product_____cart img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
-.product_____cart{
+.product_____cart {
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 5px;
+  margin-top: 12px;
+}
+.maaaaain______card{
+  margin-top: 72px;
+}
+.product____details p,
+.product_____quantity p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.product_____quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product____details {
+  border-right: 2px solid #50c878;
+}
+.cart___Select {
+  cursor: pointer;
+}
+.name {
+  color: #50c878;
+}
+.main_____side________content {
+  padding-left: 30px;
+  /* margin-top: 72px; */
+  position: fixed;
+  width: 30%;
+  top: 0;
+  right: 2%;
+  min-height: 100vh;
+  border-left: 2px solid #dfe5f0;
+}
+.detailssss {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detailssss p {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  padding-top: 12px;
+}
+.checkout____details {
+  margin-top: 50px;
+}
+.checkout______btn button {
+  border: none;
+  outline: none;
+  padding: 8px 30px;
+  color: #fff;
+  background-color: #50c878;
+  border-radius: 6px;
+  letter-spacing: 2px;
+}
+.promoButton {
+  background-color: #50c878 !important;
+  border: none !important;
+  outline: none !important;
+  color: #fff;
+}
+
+/* media */
+@media (max-width: 1886px) {
+  .all____________card {
+    margin-right: 66px;
+  }
+}
+
+@media (max-width: 1077px) {
+  .main_____side________content {
+    border: none;
+    padding-left: 30px;
+    position: relative;
+    width: 50%;
+  }
+  .main_______content_____div {
+    width: 100%;
+  }
+  .mainamin{
     display: flex;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    border-radius: 5px;
-    margin-top: 72px;
-}
-.product____details p, .product_____quantity p{
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-.product_____quantity{
-    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .all____________card{
+    margin-right: 0;
+  }
 }
-.product____details{
-    border-right: 2px solid #50c878;
+@media (max-width: 788px){
+  .main_____side________content{
+      width: 80%;
+  }
 }
-.cart___Select{
-    cursor: pointer;
+@media (max-width: 640px){
+  .main_____side________content{
+      width: 100%;
+  }
 }
-.name{
-    color: #50c878;
-}
-.main_____side________content{
-    padding-left: 30px;
-    /* margin-top: 72px; */
-    position: fixed;
-    width: 30%;
-    top: 0;
-    right: 2%;
-    min-height: 100vh;
-    border-left: 2px solid #000;
+
+@media (max-width: 411px){
+  .individual________card{
+    width: 100%;
+    height: 20rem;
+  }
 }

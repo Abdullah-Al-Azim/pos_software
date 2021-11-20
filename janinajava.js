@@ -26,19 +26,23 @@ var typed = new Typed ('.type-animate', {
 // hamburger menu
 var hamburger_________id = document.getElementById("hamburger_________id");
 const sidebar = document.querySelector("#sidebar");
+const closeSidebar = document.querySelector(".sidebar________icon_____close");
 
 hamburger_________id.addEventListener("click", function(e) {
-    sidebar.classList.toggle("show_____menu");
+    sidebar.classList.add("show_____menu");
+});
+
+closeSidebar.addEventListener("click", () => {
+  sidebar.classList.remove("show_____menu");
+});
+
+document.addEventListener("click", (event) => {
+  if (event.target.closest("#hamburger_________id")) return;
+  if (event.target.closest("#sidebar")) return;
+
+  sidebar.classList.remove("show_____menu");
 })
 
-document.onclick = function(e) {  
-  let clickOnIcon = e.target.classList[0] !== "iconify" && e.target.classList[1] !== "iconify--ci" && e.target.classList[2] !== "hamburger_____________icon";
-  let clickOnSidebar = e.target.classList[0] !== "side__________content" && e.target.classList[1] !== "show_____menu";
-
-  if (clickOnIcon && clickOnSidebar)
-    sidebar.classList.remove("show_____menu");
-
-}
 
 
 // slider

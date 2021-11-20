@@ -217,6 +217,7 @@
   color: #fff;
   font-size: 40px;
   display: none;
+  cursor: pointer;
 }
 
 /* floating bar style */
@@ -736,6 +737,7 @@
     top: 4%;
     left: 9%;
     font-size: 27px;
+    cursor: pointer;
   }
   .side__________content.show_____menu {
     right: 0;
